@@ -18,7 +18,7 @@ async function createPages ({ boundActionCreators, graphql }) {
   // const response = await WooCommerce.getAsync('products')
   // const products = JSON.parse(response.toJSON().body);
 
-  const products = require('./../fixture.json');
+  const products = require('./../backend/fixture.json');
   products.forEach(product => {
     createPage({
       path: product.slug,
